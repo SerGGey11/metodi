@@ -24,6 +24,15 @@ public class Main {
         }
     }
 
+    public static int checkTimeToDeirylivery(int time, int days) {
+        if (time <= 20) {
+            int days1 = 1;
+        } else if (time <= 60 && time > 20) {
+            int days2 = 2;
+        } else {
+            int days3 = 3;
+        }
+    }
     public static void main(String[] args) {
         int year = 2021;
         if (isYearLeap(year)) {
@@ -31,10 +40,18 @@ public class Main {
         } else {
             System.out.println("Год не является високосным");
         }
+        int os = 3;
+        int year1 = 2025;
+        checkOS(os, year1);
+
+
+        int deliveryDistance = 10;
 
 
     }
 
 }
+
+
 
 
